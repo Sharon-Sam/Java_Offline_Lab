@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main {
+
+	public void doDivide(int a, int b){
+		try{
+			int result = a/b;
+			System.out.println("Result of "+ a +"/"+b +"= " +result);
+		}catch(ArithmeticException e){
+			System.out.println("Can't divide a number by zero");
+		}
+	}
+	
+	public static void main(String[] args) {
+		Scanner obj = new Scanner(System.in);
+		System.out.print("Please enter first number(numerator): ");
+		int numerator = obj.nextInt();
+		System.out.print("Please enter second number(denominator): ");
+		int denominator = obj.nextInt();		
+		new Main().doDivide(numerator, denominator);		
+	}
+}
