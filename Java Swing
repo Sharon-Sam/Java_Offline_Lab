@@ -1,0 +1,27 @@
+import java.swing.*;
+
+public class Main{
+    public Main(){
+        JFrame jf=new Jrame("User page");
+        jf.setLayout(null);
+        jf.setBounds(600,600,300,150);
+        
+        JLabel jl=new Jlabel();
+        jl.setBounds(30,30,540,30);
+        jl.setBackground(Color.gray);
+        jl.setOpaque(true);
+        jf.add(jl);
+        
+        JButton jb=new JButton("click");
+        jb.setBounds(30,130,80,80);
+        jf.add(jb);
+        
+        jf.setvisible(true);
+        jf.setDefaultCloseoperation(JFrame.EXIT_ON_CLOSE);
+    }
+    
+    public static void main(String args[]){
+        new Main();
+    }
+    
+}
